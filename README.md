@@ -1,12 +1,12 @@
 # Sistema de Registro de Productos
 
-## 📋 Descripción
+## Descripción
 
 Sistema web interactivo para el registro de productos en una base de datos PostgreSQL. Permite crear productos con múltiples atributos como bodega, sucursal, moneda, precio, materiales y descripción. Validaciones en tiempo real mediante JavaScript y AJAX.
 
 ---
 
-## 🔧 Requisitos del Sistema
+## Requisitos del Sistema
 
 - **PHP** 7.4 o superior (se recomienda PHP 8.0+)
 - **PostgreSQL** 12 o superior (se recomienda PostgreSQL 16)
@@ -15,7 +15,7 @@ Sistema web interactivo para el registro de productos en una base de datos Postg
 
 ---
 
-## 🚀 Instrucciones de Instalación
+## Instrucciones de Instalación
 
 ### Paso 1: Descargar el Proyecto
 Clona o descarga el proyecto en tu servidor web.
@@ -79,14 +79,11 @@ http://localhost/Prueba_tecnica/
 
 ---
 
-## 📁 Estructura de Archivos
+## Estructura de Archivos
 
 ```
 Prueba_tecnica/
 ├── index.php                      # Página principal (formulario)
-├── debug.php                      # Archivo de debug
-├── debug_connection.php           # Test de conexión a BD
-├── debug_sucursales.php           # Test de sucursales
 ├── README.md                      # Este archivo
 ├── README.txt                     # Instrucciones en texto plano
 │
@@ -111,7 +108,7 @@ Prueba_tecnica/
 
 ---
 
-## 💻 Uso de la Aplicación
+## Uso de la Aplicación
 
 ### Campos del Formulario
 
@@ -137,16 +134,16 @@ Prueba_tecnica/
 
 ### Validaciones
 
-✅ Todas las validaciones se realizan en **JavaScript en tiempo real**
-✅ Los errores se muestran en **alertas** descriptivas
-✅ El código se verifica en la **base de datos** para asegurar unicidad
-✅ Se valida **formato, longitud y obligatoriedad** de cada campo
+Todas las validaciones se realizan en **JavaScript en tiempo real**
+Los errores se muestran en **alertas** descriptivas
+El código se verifica en la **base de datos** para asegurar unicidad
+Se valida **formato, longitud y obligatoriedad** de cada campo
 
 ---
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
-### ❌ "Error de conexión a la base de datos"
+###  "Error de conexión a la base de datos"
 
 **Soluciones:**
 1. Verifica que PostgreSQL esté corriendo
@@ -162,7 +159,7 @@ Prueba_tecnica/
 
 ---
 
-### ❌ "La página muestra 'Seleccione una bodega' sin opciones"
+### "La página muestra 'Seleccione una bodega' sin opciones"
 
 **Soluciones:**
 1. Abre: `http://localhost/Prueba_tecnica/debug_connection.php`
@@ -171,20 +168,20 @@ Prueba_tecnica/
 
 ---
 
-### ❌ "No se pueden guardar productos"
+### "No se pueden guardar productos"
 
 **Soluciones:**
 1. Abre la consola del navegador: **F12** → pestaña **Console**
 2. Revisa los mensajes de error
 3. Verifica que:
-   - ✅ Todos los campos estén completos
-   - ✅ El código sea único (no repetido)
-   - ✅ El código tenga 5-15 caracteres
-   - ✅ Se seleccionen mínimo 2 materiales
+   - Todos los campos estén completos
+   - El código sea único (no repetido)
+   - El código tenga 5-15 caracteres
+   - Se seleccionen mínimo 2 materiales
 
 ---
 
-## 📊 Tabla de Base de Datos
+## Tabla de Base de Datos
 
 ### Tablas creadas:
 - `bodegas` - Almacenes principales
@@ -202,7 +199,7 @@ Prueba_tecnica/
 
 ---
 
-## ℹ️ Información de Versión
+## Información de Versión
 
 | Elemento | Versión |
 |----------|---------|
@@ -214,7 +211,7 @@ Prueba_tecnica/
 
 ---
 
-## 📞 Soporte y Debugging
+## Soporte y Debugging
 
 Si encuentras problemas, verifica:
 
@@ -240,23 +237,23 @@ Si encuentras problemas, verifica:
 
 ---
 
-## ✨ Características
+## Características
 
-- ✅ Validación de formularios con JavaScript (sin frameworks)
-- ✅ Carga dinámica de datos desde la BD
-- ✅ Comunicación AJAX con PHP
-- ✅ Verificación de código único en BD
-- ✅ Relaciones muchos a muchos (productos-materiales)
-- ✅ Interfaz responsive
-- ✅ Estilos CSS nativos (sin frameworks)
-- ✅ Mensajes de error personalizados
+- Validación de formularios con JavaScript (sin frameworks)
+- Carga dinámica de datos desde la BD
+- Comunicación AJAX con PHP
+- Verificación de código único en BD
+- Relaciones muchos a muchos (productos-materiales)
+- Interfaz responsive
+- Estilos CSS nativos (sin frameworks)
+- Mensajes de error personalizados
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto fue desarrollado como prueba técnica.
 
 ---
 
-**¡Listo para usar!** 🎉
+**¡Listo para usar!** 
