@@ -41,8 +41,8 @@ function cargarSucursales() {
     const bodegaId = document.getElementById('bodega').value;
     const selectSucursal = document.getElementById('sucursal');
     
-    // Limpiar sucursales
-    selectSucursal.innerHTML = '<option value="">Seleccione una sucursal</option>';
+    // Limpiar sucursales y resetear a opción en blanco
+    selectSucursal.innerHTML = '<option value=""></option>';
     
     if (!bodegaId) {
         return;
@@ -52,6 +52,8 @@ function cargarSucursales() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
+                // Mantener la opción en blanco al inicio
+                selectSucursal.innerHTML = '<option value=""></option>';
                 data.data.forEach(sucursal => {
                     const option = document.createElement('option');
                     option.value = sucursal.id_sucursal;
